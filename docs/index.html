@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tern — move your iPhone anywhere, from your Mac</title>
+<meta name="description" content="Tern simulates your iPhone's location from a Mac. Teleport, drive real roads, joystick, GPX. Free for personal use, no jailbreak, no account.">
+<link rel="icon" href="assets/icon.png">
+<style>
+:root{--bg:#0B1F3A;--panel:#12294A;--fg:#F2F5FA;--muted:#9FB0C8;--line:rgba(255,255,255,.08);--accent:#2F8BFF}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,system-ui,sans-serif}
+a{color:var(--fg)}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-size:15px}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+.hero{text-align:center;padding:48px 0 24px}
+.hero img.icon{width:128px;height:128px;border-radius:28px}
+h1{font-size:52px;line-height:1.05;letter-spacing:-.03em;margin:18px 0 12px}
+h1 span{color:var(--accent)}
+.lead{font-size:20px;color:#CFD8E6;max-width:640px;margin:0 auto}
+.cta{display:flex;gap:12px;justify-content:center;margin-top:28px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-size:15px;text-decoration:none;border:1px solid var(--line);color:var(--fg)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.fine{color:var(--muted);font-size:14px;margin-top:12px}
+.shot{display:block;width:100%;margin:44px auto 0;border-radius:14px;border:1px solid var(--line);background:#081527}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:30px;letter-spacing:-.02em;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px}
+.grid h3{font-size:17px;margin:0 0 6px}
+.grid p,section p{color:#CFD8E6;margin:0}
+code{background:rgba(255,255,255,.08);padding:2px 6px;border-radius:5px;font-size:.92em}
+ol{color:#CFD8E6;padding-left:22px}
+footer{padding:40px 0 60px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:600px){h1{font-size:38px}.lead{font-size:18px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><strong>Tern</strong><span><a href="#tr">Türkçe</a><a href="https://github.com/Voxyfy/tern">Source</a><a href="https://github.com/Voxyfy/tern/issues">Issues</a><a href="privacy.html">Privacy</a></span></nav>
+
+<div class="hero">
+  <img class="icon" src="assets/icon.png" alt="Tern app icon">
+  <h1>Move your iPhone <span>anywhere</span>.</h1>
+  <p class="lead">Tern simulates the location of an iPhone from your Mac. Teleport to a point, drive a route on real roads, steer with a joystick or replay a GPX file. Free for personal use, source on GitHub, no jailbreak, no account.</p>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/Voxyfy/tern/releases/latest/download/Tern.dmg">Download for macOS</a>
+    <a class="btn" href="https://github.com/Voxyfy/tern">View on GitHub</a>
+  </div>
+  <p class="fine">Free for personal use · PolyForm Noncommercial · macOS 15 or later · iPhone with Developer Mode on</p>
+  <img class="shot" src="assets/screenshot.png" alt="Tern window with a route from Sakarya to Ankara">
+</div>
+
+<section>
+  <h2>Four ways to move.</h2>
+  <div class="grid">
+    <div><h3>Teleport</h3><p>Click the map or search an address, press Go. The phone is there.</p></div>
+    <div><h3>Route</h3><p>Pick stops; Tern asks Apple Maps for the road route, driving or walking. Avoid tolls or highways, go round trip, loop it.</p></div>
+    <div><h3>Joystick</h3><p>Drag a knob or use the arrow keys to walk around freely at the speed you set.</p></div>
+    <div><h3>GPX</h3><p>Open any GPX track and play it back. Timestamps are ignored; your speed rules.</p></div>
+    <div><h3>Traffic pace</h3><p>Follow Apple's travel-time estimate, which includes live traffic, instead of a fixed speed. Add "realistic pace" so the trace does not look machine-made.</p></div>
+    <div><h3>No password prompt</h3><p>iOS 17 and later use a userspace tunnel, so Tern never needs root. Older devices get the developer disk image mounted automatically.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>How it works.</h2>
+  <p>Tern uses the same developer location channel Xcode uses. A small open-source helper built on <a href="https://github.com/danielpaulus/go-ios">go-ios</a> opens a tunnel to the phone and keeps the location channel alive while a route plays. Stop, disconnect or quit and the phone is back to its real position.</p>
+  <ol style="margin-top:16px">
+    <li>Turn on Developer Mode on the phone (Settings → Privacy &amp; Security).</li>
+    <li>Plug it in with a cable and tap Trust.</li>
+    <li>Press Connect in Tern, pick a mode, press Go.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Fair use.</h2>
+  <p>Simulating your location breaks the rules of many games and dating apps, and they do ban accounts for it. Tern is a developer and testing tool. What you do with it is on you.</p>
+</section>
+
+<section id="tr" lang="tr">
+  <h2>Türkçe</h2>
+  <p><strong>iPhone'unuzu Mac'ten haritada istediğiniz yere taşıyın.</strong> Tern, USB ile bağlı bir iPhone'un konumunu simüle eden kişisel kullanımda ücretsiz, kaynağı açık bir macOS uygulamasıdır. Ticari kullanım izne tabidir. Bir noktaya ışınlanın, gerçek yolları izleyen bir rotada sürün ya da yürüyün, joystick ile dolaşın veya bir GPX kaydını oynatın. Jailbreak yok, hesap yok, şifre sorusu yok.</p>
+  <p style="margin-top:14px">Rota modunda yol tarifi Apple Haritalar'dan gelir; ücretli yollardan ya da otoyollardan kaçınabilir, gidiş-dönüş yapabilir, Apple'ın canlı trafikli varış süresine uyabilirsiniz. Durdurduğunuzda ya da bağlantıyı kestiğinizde telefon gerçek konumuna döner.</p>
+  <p style="margin-top:14px">Gereksinimler: macOS 15 ya da üstü, Geliştirici Modu açık bir iPhone, ilk bağlantı için USB kablosu.</p>
+  <p style="margin-top:14px"><a class="btn primary" href="https://github.com/Voxyfy/tern/releases/latest/download/Tern.dmg">macOS için indir</a></p>
+  <p style="margin-top:14px">Konum simülasyonu birçok oyunun ve flört uygulamasının kurallarına aykırıdır ve hesap kapatma sebebidir. Tern bir geliştirme ve test aracıdır.</p>
+</section>
+
+<footer>© 2026 Batuhan Haymana · Voxyfy · PolyForm Noncommercial 1.0.0 · commercial use by permission · <a href="privacy.html">Privacy</a> · <a href="https://github.com/Voxyfy/tern">GitHub</a></footer>
+</div>
+</body>
+</html>
