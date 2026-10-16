@@ -12,7 +12,7 @@ channel that Xcode uses, wrapped in a CarPlay-style interface.
 
 [Türkçe açıklama aşağıda.](#türkçe)
 
-![Tern window](docs/screenshot.png)
+![Tern window](docs/assets/screenshot.png)
 
 ## Features
 
