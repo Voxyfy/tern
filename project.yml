@@ -33,6 +33,9 @@ targets:
         buildPhase:
           copyFiles:
             destination: executables
+        # Xcode signs the copied helper with the app's identity; otherwise signing the app
+        # fails with an unsigned nested executable under Contents/MacOS.
+        attributes: [CodeSignOnCopy]
     dependencies:
       - package: Sparkle
     entitlements:

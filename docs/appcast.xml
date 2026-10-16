@@ -6,5 +6,15 @@
     <description>Tern updates</description>
     <language>en</language>
     <!-- scripts/release.sh appends one <item> per release here. -->
+    <item>
+      <title>Tern 1.0.0</title>
+      <pubDate>Fri, 16 Oct 2026 13:38:21 +0300</pubDate>
+      <sparkle:version>1</sparkle:version>
+      <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:releaseNotesLink>https://voxyfy.github.io/tern/releases/1.0.0.html</sparkle:releaseNotesLink>
+      <enclosure url="https://github.com/Voxyfy/tern/releases/download/v1.0.0/Tern-1.0.0.dmg"
+                 sparkle:edSignature="Tfob8ZXiSNRGVenArUhpLvD2Zg8axFqeu68+onZD15BRIW7tR/sP/HKZTtmKikkeM5kqxqhAl4kXT8LAGl3/DA==" length="14740801" type="application/octet-stream"/>
+    </item>
   </channel>
 </rss>
